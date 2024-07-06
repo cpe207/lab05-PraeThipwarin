@@ -5,8 +5,7 @@ class Student {
 }
 
 function findTopNames(students){
-    let TopStudent = students.filter((x) => x.score > 8 );
-    return TopStudent;
+    return students.filter((x) => x.score > 8 ).map((x) => x.name);
   }
   
 // assign interface/type to the student1 object properly
